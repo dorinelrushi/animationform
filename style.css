@@ -1,0 +1,170 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  outline: none;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.box{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+}
+
+.box1{
+  width: 650px;
+  height: 600px;
+  background-color: rgb(255, 141, 65);
+  box-shadow: 0px 0px 30px 3px rgb(180, 180, 180);
+  border-radius: 20px;
+  transition: 3s;
+}
+
+.up{
+  animation:  move 2s linear alternate;
+}
+
+.updown {
+  animation : top 2s linear alternate;
+}
+
+@keyframes move{
+  0%{
+     opacity: .2;
+  }
+  10%{
+   position: relative;
+    top: -200px;
+    transition: 3s;
+  }
+
+  50%{
+    position: relative;
+     top: -300px;
+     transition: 3s;
+   }
+   100%{
+    position: relative;
+     top: -600px;
+     transition: 3s;
+   }
+}
+ 
+@keyframes top {
+  0%{
+    opacity: .2;
+ }
+ 10%{
+  position: relative;
+   top: -200px;
+   transition: 3s;
+ }
+
+ 50%{
+   position: relative;
+    top: -300px;
+    transition: 3s;
+  }
+  100%{
+   position: relative;
+    top: -600px;
+    transition: 3s;
+  }
+
+}
+.box2{
+  width: 650px;
+  height: 600px;
+  background-color: rgb(216, 216, 216);
+  box-shadow: 0px 0px 30px 3px rgb(180, 180, 180);
+  display: none;
+  border-radius: 20px;
+  transition: 2s;
+}
+
+
+
+.center{
+  margin: auto;
+  text-align: center;
+  position: relative;
+ top: 150px;
+}
+
+#name,#lastname{
+  width: 150px;
+  height: 28px;
+  border: none;
+  margin: 10px auto; 
+  text-align: center;
+}
+#email,#pass{
+  width: 300px;
+  height: 28px;
+  border: none;
+  margin: 5px auto; 
+  text-align: center;
+}
+
+#sub{
+  width: 100px;
+  background-color: black;
+  border: none;
+  height: 25px;
+  margin: 5px auto; 
+  color: white;
+}
+
+#signup{
+  width: 100px;
+  background-color: black;
+  border: none;
+  height: 25px;
+  margin: 5px auto; 
+  color: white;
+  width: 100px;
+  position: relative;
+   top: 110px;
+   left: 200px;
+}
+
+
+.cen{
+  margin: auto;
+  text-align: center;
+  position: relative;
+ top: 150px;
+}
+
+#m,#p{
+  width: 300px;
+  height: 28px;
+  border: none;
+  margin: 5px auto; 
+  text-align: center;
+}
+
+#s{
+  width: 100px;
+  background-color: black;
+  border: none;
+  height: 25px;
+  margin: 5px auto; 
+  color: white;
+}
+#signin{
+  width: 100px;
+  background-color: black;
+  border: none;
+  height: 25px;
+  margin: 5px auto; 
+  color: white;
+  width: 100px;
+  position: relative;
+   top: 110px;
+   left: 200px;
+}
